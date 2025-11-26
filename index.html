@@ -58,39 +58,64 @@
                 <span class="star">💫</span>
                 <span class="star">⭐</span>
             </div>
+
+            <!-- Button to Show Gallery -->
+            <button class="show-gallery-btn" id="showGalleryBtn">
+                <span class="btn-icon">📸</span>
+                <span class="btn-text">Lihat Kenangan Indah</span>
+            </button>
         </div>
 
         <!-- Photo Gallery Section -->
-        <div class="gallery-section">
+        <div class="gallery-section hidden" id="gallerySection">
             <h2 class="gallery-title">Kenangan Indah 💕</h2>
             <div class="photo-gallery">
-                <div class="photo-item">
+                <div class="photo-item" data-index="0">
                     <img src="images/cute_2.jpeg" alt="Photo 1">
                 </div>
-                <div class="photo-item">
+                <div class="photo-item" data-index="1">
                     <img src="images/pisss.jpeg" alt="Photo 2">
                 </div>
-                <div class="photo-item">
+                <div class="photo-item" data-index="2">
                     <img src="images/coll.jpeg" alt="Photo 3">
                 </div>
-                <div class="photo-item">
+                <div class="photo-item" data-index="3">
                     <img src="images/with_my_love.jpeg" alt="Photo 4">
                 </div>
-                <div class="photo-item">
+                <div class="photo-item" data-index="4">
                     <img src="images/miror_selvi.jpeg" alt="Photo 5">
                 </div>
-                <div class="photo-item">
+                <div class="photo-item" data-index="5">
                     <img src="images/smile.jpeg" alt="Photo 6">
                 </div>
-                <div class="photo-item">
+                <div class="photo-item" data-index="6">
                     <img src="images/cute.jpeg" alt="Photo 7">
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay"></div>
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Gallery Image">
+            <div class="lightbox-message-container">
+                <h3 class="lightbox-message-title" id="lightboxMessageTitle">Momen Indah</h3>
+                <p class="lightbox-message-text" id="lightboxMessage">Pesan akan muncul di sini</p>
+            </div>
+            <div class="lightbox-counter">
+                <span id="lightboxCounter">1 / 7</span>
             </div>
         </div>
     </div>
     
     <script src="messages.js"></script>
     <script src="script.js"></script>
+    <script src="gallery.js"></script>
 </body>
 </html>
 
