@@ -75,20 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
         updateButtonState();
     });
     
-    // Try to auto-play after a short delay
-    // This gives the page time to load
-    setTimeout(() => {
-        tryAutoPlay();
-    }, 500);
-    
-    // Also try when user interacts with the page (click anywhere)
-    let userInteracted = false;
-    document.addEventListener('click', () => {
-        if (!userInteracted && !isPlaying) {
-            userInteracted = true;
-            tryAutoPlay();
-        }
-    }, { once: true });
+    // Don't auto-play - wait for start button click
+    // Audio will be played when start button is clicked
     
     // Set initial volume (0.7 = 70% volume, adjust as needed)
     audio.volume = 0.7;

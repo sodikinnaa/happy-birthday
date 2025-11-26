@@ -14,9 +14,21 @@
     </audio>
     
     <!-- Audio Control Button -->
-    <button class="audio-control-btn" id="audioControlBtn" aria-label="Toggle Audio">
+    <button class="audio-control-btn hidden-content" id="audioControlBtn" aria-label="Toggle Audio">
         <span class="audio-icon" id="audioIcon">🔊</span>
     </button>
+
+    <!-- Start Button Overlay -->
+    <div class="start-overlay" id="startOverlay">
+        <div class="start-content">
+            <h2 class="start-title">🎉 Selamat Ulang Tahun! 🎉</h2>
+            <button class="start-btn" id="startBtn">
+                <span class="start-btn-icon">🎂</span>
+            </button>
+            <p class="start-hint">Klik untuk memulai</p>
+        </div>
+    </div>
+
     <div class="container">
         <!-- Confetti Animation -->
         <div class="confetti"></div>
@@ -32,8 +44,8 @@
 
         <!-- Main Content -->
         <div class="card">
-            <div class="cake">
-                <div class="candle">
+            <div class="cake hidden-content" id="cakeContainer">
+                <div class="candle" id="candleElement">
                     <div class="flame"></div>
                 </div>
                 <div class="layer layer-1"></div>
@@ -41,11 +53,11 @@
                 <div class="layer layer-3"></div>
             </div>
             
-            <h1 class="title">Selamat Ulang Tahun!</h1>
-            <h2 class="subtitle">Happy Birthday!</h2>
+            <h1 class="title hidden-content" id="titleElement">Selamat Ulang Tahun!</h1>
+            <h2 class="subtitle hidden-content" id="subtitleElement">Happy Birthday!</h2>
             
             <!-- Message Slider -->
-            <div class="message-slider-container">
+            <div class="message-slider-container hidden-content" id="messageContainer">
                 <div class="message-slider" id="messageSlider">
                     <!-- Pesan akan diisi oleh JavaScript -->
                 </div>
@@ -54,14 +66,14 @@
                 </div>
             </div>
 
-            <div class="balloons">
+            <div class="balloons hidden-content" id="balloonsContainer">
                 <div class="balloon balloon-1"></div>
                 <div class="balloon balloon-2"></div>
                 <div class="balloon balloon-3"></div>
                 <div class="balloon balloon-4"></div>
             </div>
 
-            <div class="stars">
+            <div class="stars hidden-content" id="starsContainer">
                 <span class="star">⭐</span>
                 <span class="star">✨</span>
                 <span class="star">🌟</span>
@@ -70,7 +82,7 @@
             </div>
 
             <!-- Button to Show Gallery -->
-            <button class="show-gallery-btn" id="showGalleryBtn">
+            <button class="show-gallery-btn hidden-content" id="showGalleryBtn">
                 <span class="btn-icon">📸</span>
                 <span class="btn-text">Lihat Kenangan Indah</span>
             </button>
@@ -127,6 +139,7 @@
     <script src="script.js"></script>
     <script src="gallery.js"></script>
     <script src="audio.js"></script>
+    <script src="start.js"></script>
 </body>
 </html>
 
