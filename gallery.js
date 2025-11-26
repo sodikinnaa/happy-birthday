@@ -17,20 +17,20 @@ const images = [
 // Edit pesan di bawah ini sesuai dengan gambar masing-masing
 const imageMessages = [
     {
-        title: "Momen Indah",
-        message: "Setiap momen bersamamu adalah kenangan terindah yang selalu ingin kuingat selamanya. 💕"
+        title: "Memejamkan Mata",
+        message: "Terimakasih sudah mau memjamkan matamu untuk tidak selalu melihat apa kesalahan yang aku lakukan. 💕"
     },
     {
         title: "Kebahagiaan",
         message: "Kamu adalah sumber kebahagiaanku. Senyummu membuat hari-hariku lebih cerah. ✨"
     },
     {
-        title: "Bersama",
-        message: "Bersama kamu, setiap detik terasa begitu berharga dan penuh makna. 🌟"
+        title: "Tangan Anggun",
+        message: "Terimakasih sudah menyediakan tangan yang bisa aku gengam dan ku gandeng untuk menghadapi semua hal yang ada. 🌟"
     },
     {
-        title: "Cinta",
-        message: "Dengan cinta, kita menciptakan cerita indah yang akan selalu dikenang. 💖"
+        title: "Bersama",
+        message: "Terimakasih sudah bertahan dengan apa yang sudah terjadi dan akan terjadi. 💖"
     },
     {
         title: "Kenangan",
