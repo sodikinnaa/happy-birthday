@@ -52,7 +52,7 @@ const birthdayMessages = [
 // ============================================
 const sliderSettings = {
     autoSlide: true,        // Otomatis ganti slide (true/false)
-    slideInterval: 4000,    // Waktu per slide dalam milidetik (4000 = 4 detik)
+    slideInterval: 3000,    // Waktu per slide dalam milidetik (4000 = 4 detik)
     animationSpeed: 500     // Kecepatan animasi dalam milidetik
 };
 
